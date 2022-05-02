@@ -1,0 +1,78 @@
+# Sample model config for to instantiate a resnet18 model freeze blocks 0, 1
+# with all shortcuts having projection layers.
+
+model_config {
+  arch: "vanilla_unet_dynamic"
+  use_batch_norm: true
+  initializer: HE_UNIFORM
+  training_precision {
+    backend_floatx: FLOAT32
+  }
+
+  model_input_height: 512
+  model_input_width: 512
+  model_input_channels: 3
+}
+
+
+training_config {
+  batch_size: 8
+  epochs: 30
+  log_summary_steps: 10
+  checkpoint_interval: 3
+  loss: "cross_entropy"
+  learning_rate:0.0001
+  lr_scheduler {
+    cosine_decay {
+      alpha : 0.01
+      decay_steps: 500
+    }
+  }
+  regularizer {
+    type: L2
+    weight: 1.0e-12 
+  }
+  optimizer {
+    adam {
+      epsilon: 9.99999993923e-09
+      beta1: 0.899999976158
+      beta2: 0.999000012875
+    }
+  }
+}
+
+dataset_config {
+    dataset: "custom"
+    augment: True
+    resize_padding: True
+    resize_method: "BILINEAR"
+    augmentation_config {
+      spatial_augmentation {
+        hflip_probability : 0.5
+        vflip_probability : 0.5
+        crop_and_resize_prob : 0.5
+      }
+      brightness_augmentation {
+        delta: 0.25
+      }
+    }
+
+    input_image_type: "color"
+    train_images_path:"/workspace/tao-experiments/data/train_images"
+    train_masks_path:"/workspace/tao-experiments/data/train_labels"
+    val_images_path:"/workspace/tao-experiments/data/real_w_images_val"
+    val_masks_path:"/workspace/tao-experiments/data/real_w_labels_val"
+    test_images_path:"/workspace/tao-experiments/data/latest_office"
+    data_class_config {
+      target_classes {
+      name: "free_space"
+      mapping_class: "free_space"
+      label_id: 1
+    }
+    target_classes {
+      name: "blocked"
+      mapping_class: "blocked"
+      label_id: 0
+    }
+  }
+}

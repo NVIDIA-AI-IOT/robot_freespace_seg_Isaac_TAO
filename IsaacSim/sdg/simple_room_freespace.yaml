@@ -1,0 +1,59 @@
+# Folder path for the floor texture images, should be uploaded to nucleus server
+floor_texture_folder:
+  path: "omniverse://localhost/Isaac/texture_floor/"
+
+# Folder path for the wall texture images, should be uploaded to nucleus server
+wall_texture_folder:
+  path: "omniverse://localhost/Isaac/texture_wall/"
+
+# The nucleus server folder which contains the YCB objects (provided as samples with Isaac Sim)
+objects_usd_folder:
+  server_path: "omniverse://localhost/Isaac/Props/YCB/Axis_Aligned"
+
+# Wall prims to be grouped
+wall_group:
+  wall_prims : ["/Root/Towel_Room01_floor_rim_back_220", "/Root/Towel_Room01_floor_rim_back_220",
+                    "/Root/Towel_Room01_floor_rim_corner005_234", "/Root/Towel_Room01_floor_rim_side003_258",
+                    "/Root/Towel_Room01_wall_back001_274", "/Root/Towel_Room01_wall_back_272",
+                    "/Root/Towel_Room01_wall_corner001_278", "/Root/Towel_Room01_wall_corner002_280",
+                    "/Root/Towel_Room01_wall_corner003_282", "/Root/Towel_Room01_wall_corner_276", 
+                    "/Root/Towel_Room01_wall_side001_286", "/Root/Towel_Room01_wall_side_284", 
+                    "/Root/Towel_Room01_window_frame_bottom001_292", "/Root/Towel_Room01_window_frame_bottom002_294",
+                    "/Root/Towel_Room01_window_frame_corner002_296", "/Root/Towel_Room01_window_frame_corner004_298",
+                    "/Root/Towel_Room01_window_frame_corner006_302", "/Root/Towel_Room01_window_frame_side001_304",
+                    "/Root/Towel_Room01_window_frame_side002_306", "/Root/Towel_Room01_wood_wall_008_322", 
+                    "/Root/Towel_Room01_wood_wall_009_324", "/Root/Towel_Room01_wood_wall_308", 
+                    "/Root/Towel_Room01_wood_wall_310", "/Root/Towel_Room01_wood_wall_312", 
+                    "/Root/Towel_Room01_wood_wall_314", "/Root/Towel_Room01_wood_wall_316",
+                    "/Root/Towel_Room01_wood_wall_318", "/Root/Towel_Room01_wood_wall_320",
+                    "/Root/Towel_Room01_floor_rim_side_252", "/Root/Towel_Room01_floor_rim_corner002_228",
+                    "/Root/Towel_Room01_floor_rim_front_center_side_244", "/Root/Towel_Room01_floor_rim_front_center_240",
+                    "/Root/Towel_Room01_window_frame_corner005_300", "/Root/Towel_Room01_floor_rim_corner003_230",
+                    "/Root/Towel_Room01_floor_rim_front_center_side001_246", "/Root/Towel_Room01_floor_rim_side001_254", 
+                    "/Root/Towel_Room01_florr_edge_262", "/Root/Towel_Room01_floor_rim_corner001_226", 
+                    "/Root/Towel_Room01_floor_rim_corner_224"]
+
+# Objects to add to the scene, you can specify the path of the objects on the nucleus server for additional objects 
+additional_objects:
+  ycb_objects: ['omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/002_master_chef_can.usd',
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/003_cracker_box.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/004_sugar_box.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/005_tomato_soup_can.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/006_mustard_bottle.usd',
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/007_tuna_fish_can.usd',
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/008_pudding_box.usd',
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/009_gelatin_box.usd',
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/010_potted_meat_can.usd',
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/011_banana.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/019_pitcher_base.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/021_bleach_cleanser.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/024_bowl.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/025_mug.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/035_power_drill.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/036_wood_block.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/037_scissors.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/040_large_marker.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/051_large_clamp.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/052_extra_large_clamp.usd', 
+              'omniverse://localhost/Isaac/Props/YCB/Axis_Aligned/061_foam_brick.usd']
+
