@@ -1,8 +1,10 @@
-# freespace_seg
+# Freespace Segmentation
 
 This project provides a workflow for using NVIDIA's Isaac Sim, TAO and IsaacROS for deploying a freespace segmentation model on a Jetson powered robot.
 
 ![Intro to freespace segmentation](images/jupyter_intro_image.JPG)
+
+### Follow the Jupyter Notebook `freespace_segmentation.ipynb` for understanding all the steps involved in the project
 
 ## Components of the Workflow:
 - [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac-sim) to generate labeled synthetic segmentation data
@@ -14,7 +16,7 @@ This project provides a workflow for using NVIDIA's Isaac Sim, TAO and IsaacROS 
 - Scripts for generating synthetic data using Isaac Sim:
       - Domain Randomization for position and scale objects and the lighting of the simulated environment, the color and texture of objects and more.
       - Using two different environments from Isaac Sim to generalize the model.
-- Jupyter Notebook for TAO toolkit train, prune, and PTQ (INT8) optimizations.
+- Jupyter Notebook for entire workflow: Synthetic Data Generation followed by TAO toolkit train, prune, and PTQ (INT8) optimizations.
 - Guide to deploy optimized trained model on Jetson powered robot. 
 
 ## What this project does not include:
