@@ -44,6 +44,9 @@ class YamlReader():
     def get_wall_group_list(self):
         return self.yaml_file['wall_group']['wall_prims']
 
+    def get_randomization_object_list(self):
+        return self.yaml_file['randomization_objects']['warehouse_objects']
+
     def get_additional_objects_list(self):
         return self.yaml_file['additional_objects']['ycb_objects']
 
@@ -56,4 +59,5 @@ class YamlReader():
     def get_randomization_objects(self):
         return self.yaml_file['randomization_objects']['existing_objects']
 
+ 
  
