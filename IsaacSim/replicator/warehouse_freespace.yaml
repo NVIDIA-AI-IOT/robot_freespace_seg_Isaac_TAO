@@ -1,0 +1,65 @@
+# Folder path for the floor texture images, should be uploaded to nucleus server
+floor_texture_folder:
+  path: "omniverse://localhost/Isaac/texture_floor/"
+
+# Folder path for the wall texture images, should be uploaded to nucleus server
+wall_texture_folder:
+  path: "omniverse://localhost/Isaac/texture_wall/"
+
+# Wall prims to be grouped
+wall_group:
+  wall_prims: ["/Root/SM_WallA_3M33", "/Root/SM_WallA_3M42", "/Root/SM_WallA_InnerCorner9_88",
+                    "/Root/SM_WallA_3M43", "/Root/SM_WallA_3M44", "/Root/SM_WallA_3M6_113",
+                    "/Root/SM_WallA_6M13", "/Root/SM_WallA_6M14", "/Root/SM_WallA_6M15", 
+                    "/Root/SM_WallA_6M18", "/Root/SM_WallA_6M19", "/Root/SM_WallA_6M20",
+                    "/Root/SM_WallA_6M21", "/Root/SM_WallA_6M22", "/Root/SM_WallA_6M23", 
+                    "/Root/SM_WallA_6M24", "/Root/SM_WallA_6M3_94", "/Root/SM_WallA_6M4", 
+                    "/Root/SM_WallA_6M5", "/Root/SM_WallA_6M6", "/Root/SM_WallA_6M7", 
+                    "/Root/SM_WallA_6M8", "/Root/SM_WallA_6M9", "/Root/SM_WallA_InnerCorner10", 
+                    "/Root/SM_WallA_InnerCorner11", "/Root/SM_WallA_InnerCorner12"]
+
+# Floor prims to be grouped
+floor_group:
+  floor_prims: ["/Root/SM_floor27", "/Root/SM_floor28", "/Root/SM_floor29",
+            "/Root/SM_floor30", "/Root/SM_floor31", "/Root/SM_floor32", 
+            "/Root/SM_floor33", "/Root/SM_floor34", "/Root/SM_floor35",
+            "/Root/SM_floor36", "/Root/SM_floor37", "/Root/SM_floor39",
+            "/Root/SM_floor42_1324", "/Root/SM_floor44", "/Root/SM_floor46",
+            "/Root/SM_floor47", "/Root/SM_floor48", "/Root/SM_floor49",
+            "/Root/SM_floor50", "/Root/SM_floor51", "/Root/SM_floor52", 
+            "/Root/SM_floor53", "/Root/SM_floor54", "/Root/SM_floor55", 
+            "/Root/SM_floor56", "/Root/SM_floor57", "/Root/SM_floor58",
+            "/Root/SM_floor59", "/Root/SM_floor60", "/Root/SM_floor61",
+            "/Root/SM_floor62", "/Root/SM_floor63", "/Root/SM_floor64",
+            "/Root/SM_floor65", "/Root/SM_floor66", "/Root/SM_floor67",
+            "/Root/Group/SM_floor38", "/Root/Group/SM_floor40", "/Root/Group/SM_floor41", 
+            "/Root/Group/SM_floor43", "/Root/Group/SM_floor45", "/Root/Group/SM_floor68", 
+            "/Root/Group/SM_floor69", "/Root/Group/SM_floor70", "/Root/Group/SM_floor71",
+            "/Root/Group/SM_floor72", "/Root/Group/SM_floor73", "/Root/Group/SM_floor74",
+            "/Root/Group/SM_floor75", "/Root/Group/SM_floor76", "/Root/Group/SM_floor77",
+            "/Root/Group/SM_floor78", "/Root/Group/SM_floor79", "/Root/Group/SM_floor80"]
+
+# Light prims to be grouped
+light_group:
+  light_prims: ["/Root/RectLight", "/Root/RectLight_01", 
+                "/Root/RectLight_02", "/Root/RectLight_03", 
+                "/Root/RectLight_04", "/Root/RectLight_05", 
+                "/Root/RectLight_06"]
+
+# Objects in scene to randomize
+randomization_objects:
+  existing_objects: ["/Root/SM_BarelPlastic_C_01_25", "/Root/SM_BarelPlastic_C_2", 
+                    "/Root/SM_BottlePlasticD_2", "/Root/SM_BottlePlasticD_3", 
+                    "/Root/SM_BottlePlasticD_4", "/Root/SM_BucketPlastic_B_41", 
+                    "/Root/SM_CardBoxA_02_2", "/Root/SM_CardBoxB_01_29",
+                    "/Root/SM_CardBoxB_02_32", "/Root/SM_CardBoxB_3", 
+                    "/Root/SM_CardBoxD_04_6", "/Root/SM_CardBoxD_4",
+                    "/Root/SM_CratePlasticNote_B_03_18", "/Root/SM_CratePlastic_D_01_47", 
+                    "/Root/SM_CratePlastic_E_03_44", "/Root/SM_PaperNote_Small_15", 
+                    "/Root/SM_PaperNote_Small_16", "/Root/SM_PaperNote_Small_17", 
+                    "/Root/SM_PaperNote_Small_18", "/Root/SM_PushcartA_02_22", 
+                    "/Root/SM_TrafficCone2", "/Root/SM_TrafficCone3", 
+                    "/Root/SM_TrafficCone4", "/Root/SM_TrafficCone5",
+                    "/Root/SM_TrafficCone6", "/Root/SM_TrafficCone_2", 
+                    "/Root/SM_WetFloorSign2", "/Root/SM_WetFloorSign_2"]
+
