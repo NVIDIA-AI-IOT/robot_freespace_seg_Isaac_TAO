@@ -198,7 +198,7 @@ class WarehouseFreespace(torch.utils.data.IterableDataset):
                 
                 with camera:
                     rep.modify.pose(
-                    position=rep.distribution.uniform((-377, 685, 10), (-130, 685, 15)),
+                    position=rep.distribution.uniform((-4.39, -1.39, 0.2), (-1.30, 20, 0.3)),
                     rotation=rep.distribution.uniform((0,0, 0),(0, 360, 0)))
                 
                 with floor:
