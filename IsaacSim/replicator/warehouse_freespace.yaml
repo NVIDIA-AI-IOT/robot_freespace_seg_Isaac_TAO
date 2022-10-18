@@ -32,12 +32,12 @@ floor_group:
             "/Root/SM_floor59", "/Root/SM_floor60", "/Root/SM_floor61",
             "/Root/SM_floor62", "/Root/SM_floor63", "/Root/SM_floor64",
             "/Root/SM_floor65", "/Root/SM_floor66", "/Root/SM_floor67",
-            "/Root/Group/SM_floor38", "/Root/Group/SM_floor40", "/Root/Group/SM_floor41", 
-            "/Root/Group/SM_floor43", "/Root/Group/SM_floor45", "/Root/Group/SM_floor68", 
-            "/Root/Group/SM_floor69", "/Root/Group/SM_floor70", "/Root/Group/SM_floor71",
-            "/Root/Group/SM_floor72", "/Root/Group/SM_floor73", "/Root/Group/SM_floor74",
-            "/Root/Group/SM_floor75", "/Root/Group/SM_floor76", "/Root/Group/SM_floor77",
-            "/Root/Group/SM_floor78", "/Root/Group/SM_floor79", "/Root/Group/SM_floor80"]
+            "/Root/SM_floor38", "/Root/SM_floor40", "/Root/SM_floor41", 
+            "/Root/SM_floor43", "/Root/SM_floor45", "/Root/SM_floor68", 
+            "/Root/SM_floor69", "/Root/SM_floor70", "/Root/SM_floor71",
+            "/Root/SM_floor72", "/Root/SM_floor73", "/Root/SM_floor74",
+            "/Root/SM_floor75", "/Root/SM_floor76", "/Root/SM_floor77",
+            "/Root/SM_floor78", "/Root/SM_floor79", "/Root/SM_floor80"]
 
 # Light prims to be grouped
 light_group:

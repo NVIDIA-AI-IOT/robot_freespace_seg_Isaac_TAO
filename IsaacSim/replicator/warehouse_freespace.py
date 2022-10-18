@@ -38,7 +38,7 @@ CONFIG = {"renderer": "RayTracedLighting", "headless": False, "width": 1024, "he
 
 kit = SimulationApp(launch_config=CONFIG)
 
-from omni.isaac.synthetic_utils import SyntheticDataHelper, NumpyWriter, KittiWriter
+from omni.isaac.synthetic_utils import SyntheticDataHelper, NumpyWriter
 from omni.isaac.core.utils.nucleus import find_nucleus_server
 from pxr import Gf, UsdGeom
 import numpy as np 

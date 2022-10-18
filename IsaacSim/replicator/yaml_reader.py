@@ -56,4 +56,5 @@ class YamlReader():
     def get_randomization_objects(self):
         return self.yaml_file['randomization_objects']['existing_objects']
 
- 
+    def get_objects_folder(self):
+        return self.yaml_file['objects_usd_folder']['server_path']
