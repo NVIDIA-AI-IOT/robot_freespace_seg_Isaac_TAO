@@ -7,12 +7,12 @@ OUTPUT_FOLDER="${PWD}/warehouse_freespace"
 
 cd ../../..
 
-./python.sh $SCRIPT_PATH --scenario omniverse://localhost/NVIDIA/Assets/Isaac/2022.1/Isaac/Environments/Simple_Warehouse/full_warehouse.usd --num_frames 10 --yaml_path $YAML_PATH --data_dir $OUTPUT_FOLDER
+./python.sh $SCRIPT_PATH  --num_frames 10 --yaml_path $YAML_PATH --data_dir $OUTPUT_FOLDER
 
-./python.sh $SCRIPT_PATH --scenario omniverse://localhost/NVIDIA/Assets/Isaac/2022.1/Isaac/Environments/Simple_Warehouse/full_warehouse.usd --num_frames 10 --yaml_path $YAML_PATH --light_dr True --data_dir $OUTPUT_FOLDER
+./python.sh $SCRIPT_PATH --num_frames 10 --yaml_path $YAML_PATH --light_dr True --data_dir $OUTPUT_FOLDER
 
-./python.sh $SCRIPT_PATH --scenario omniverse://localhost/NVIDIA/Assets/Isaac/2022.1/Isaac/Environments/Simple_Warehouse/full_warehouse.usd --num_frames 10 --yaml_path $YAML_PATH --wall_dr color --data_dir $OUTPUT_FOLDER
+./python.sh $SCRIPT_PATH --num_frames 10 --yaml_path $YAML_PATH --wall_dr color --data_dir $OUTPUT_FOLDER
 
-./python.sh $SCRIPT_PATH --scenario omniverse://localhost/NVIDIA/Assets/Isaac/2022.1/Isaac/Environments/Simple_Warehouse/full_warehouse.usd --num_frames 10 --yaml_path $YAML_PATH --floor_dr color --data_dir $OUTPUT_FOLDER
+./python.sh $SCRIPT_PATH --num_frames 10 --yaml_path $YAML_PATH --floor_dr color --data_dir $OUTPUT_FOLDER
 
-./python.sh $SCRIPT_PATH --scenario omniverse://localhost/NVIDIA/Assets/Isaac/2022.1/Isaac/Environments/Simple_Warehouse/full_warehouse.usd --num_frames 10 --yaml_path $YAML_PATH --wall_dr color --floor_dr color --data_dir $OUTPUT_FOLDER
+./python.sh $SCRIPT_PATH --num_frames 10 --yaml_path $YAML_PATH --wall_dr color --floor_dr color --data_dir $OUTPUT_FOLDER

@@ -54,6 +54,7 @@ from omni.physx.scripts import utils
 from yaml_reader import YamlReader
 
 import omni.replicator.core as rep
+from omni.isaac.core.utils.nucleus import get_assets_root_path
 
 class WarehouseFreespace(torch.utils.data.IterableDataset):
 
@@ -64,10 +65,14 @@ class WarehouseFreespace(torch.utils.data.IterableDataset):
         self.stage = kit.context.get_stage()
         self.result = True
 
-        if scenario_path is None:
-            carb.log_error("Please enter the correct scenario path to load..")
-            return
+        relative_path = "/Isaac/Environments/Simple_Warehouse/full_warehouse.usd"
 
+        assets_root_path = get_assets_root_path()
+        if assets_root_path is None:
+            carb.log_error("Could not find Isaac Sim assets folder")
+            return
+        scenario_path = assets_root_path + relative_path
+        
         self.yaml_reader = YamlReader(yaml_path)
         self.scenario_path = scenario_path
         self.max_queue_size = max_queue_size
